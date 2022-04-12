@@ -1,0 +1,32 @@
+django.utils.autoreload INFO 2022-04-12 19:17:51,236 autoreload 32 139695877838656 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2022-04-12 19:17:57,681 autoreload 32 139695877838656 /code/backend/settings.py changed, reloading.
+INFO 2022-04-12 19:33:29,860 Watching for file changes with StatReloader
+WARNING 2022-04-12 19:33:33,781 An error was raised by: Company matching query does not exist.
+WARNING 2022-04-12 19:33:33,785 An error was raised by: null value in column "market_values" of relation "api_company" violates not-null constraint
+DETAIL:  Failing row contains (581ba467-88aa-43d1-96f7-275753fce55f, My First Company updated, , , null).
+
+WARNING 2022-04-12 19:33:33,786 Bad Request: /api/companies/9e28b3f7-5d7a-466c-9944-26dfe32d7aa8/
+WARNING 2022-04-12 19:35:07,428 Method Not Allowed: /api/companies/195a31c2-ea80-45a1-be90-08916870aaf7/
+INFO 2022-04-12 19:36:17,894 /code/apps/api/views.py changed, reloading.
+INFO 2022-04-12 19:36:19,084 Watching for file changes with StatReloader
+ERROR 2022-04-12 19:36:40,915 Internal Server Error: /api/companies/195a31c2-ea80-45a1-be90-08916870aaf7/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'id'
+INFO 2022-04-12 19:36:57,482 /code/apps/api/views.py changed, reloading.
+INFO 2022-04-12 19:36:58,701 Watching for file changes with StatReloader
