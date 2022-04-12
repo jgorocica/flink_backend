@@ -31,3 +31,4 @@ TypeError: get() got multiple values for argument 'id'
 INFO 2022-04-12 19:36:57,482 /code/apps/api/views.py changed, reloading.
 INFO 2022-04-12 19:36:58,701 Watching for file changes with StatReloader
 INFO 2022-04-12 19:44:23,121 Watching for file changes with StatReloader
+INFO 2022-04-12 19:46:24,253 Watching for file changes with StatReloader
