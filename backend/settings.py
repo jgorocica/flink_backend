@@ -168,5 +168,7 @@ LOGGING = {
 # CORS config
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:8080',
+    'https://jgorocica.github.io/flink_frontend/',
+    'https://jgorocica.github.io/'
 ]
 
